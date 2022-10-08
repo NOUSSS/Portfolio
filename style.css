@@ -7,11 +7,21 @@
 body {
     display: flex;
     font-family: 'Montserrat', sans-serif;
-    background-color: #141414;
+    overflow: hidden;
+}
+
+.background {
+    margin-top: -26px;
+    margin-left: -339px;
+    filter: blur(10px);
+    top: 0;
+    left: 0;
+    position: fixed;
 }
 
 .container {
-    width: 80%;
+    opacity: 0.8;
+    width: 1200px;
     height: auto;
     background-color: #212224;
     border-radius: 20px;
@@ -21,11 +31,20 @@ body {
 }
 
 .tools a {
+    margin: 19px;
+    background: linear-gradient(to top, orange 0%, orange 4px, transparent 4px) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.5s;
     color: white;
 }
 
+.tools a:hover {
+    background-size: 100% 100%;
+}
+
 .tools {
-    justify-content: end;
+    text-align: end;
+    justify-content: flex-end;
     position: relative;
     top: -50px;
 }

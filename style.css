@@ -2,11 +2,12 @@
 
 * {
     text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     display: flex;
-    font-family: 'Montserrat', sans-serif;
     background: orange;
 }
 
@@ -67,6 +68,8 @@ body {
 }
 
 .title p span {
+    border: solid white 3px;
+    border-left: 0px;
     top: -5px;
     position: relative;
     margin: 8px;

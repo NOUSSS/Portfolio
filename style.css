@@ -7,50 +7,56 @@
 body {
     display: flex;
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
+    background: orange;
 }
 
 .background {
-    margin-top: -26px;
-    margin-left: -339px;
-    filter: blur(10px);
-    top: 0;
-    left: 0;
     position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    filter: blur(11px);
+    -webkit-filter: blur(11px);
 }
 
 .container {
-    opacity: 0.8;
-    width: 1200px;
+    opacity: 0.9;
+    margin-left: 5%;
+    width: 90%;
     height: auto;
-    background-color: #212224;
+    background-color: #2d2d2e;
     border-radius: 20px;
-    margin-left: 42px;
     box-shadow: -2px 4px 20px black;
-    margin-top: 5px;
 }
 
 .tools a {
-    margin: 19px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+    margin-right: 40px;
+    font-size: 40px;
     background: linear-gradient(to top, orange 0%, orange 4px, transparent 4px) no-repeat;
-    background-size: 0% 100%;
+    background-size: 0%;
     transition: background-size 0.5s;
     color: white;
 }
 
 .tools a:hover {
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 
 .tools {
-    text-align: end;
+    /* width: 750px; */
+    display: flex;
     justify-content: flex-end;
     position: relative;
-    top: -50px;
+    top: -70px;
 }
 
 .title {
-    text-align: left;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: flex-start;
     left: 21px;
     position: relative;
 }
@@ -61,8 +67,8 @@ body {
 }
 
 .title p span {
-    top: -11px;
+    top: -5px;
     position: relative;
     margin: 8px;
-    font-size: 23px;
+    font-size: 35px;
 }

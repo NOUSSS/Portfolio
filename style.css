@@ -8,70 +8,20 @@
 
 body {
     display: flex;
-    background: orange;
-}
-
-.background {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    filter: blur(11px);
-    -webkit-filter: blur(11px);
+    background-color: #1a1919;
 }
 
 .container {
-    opacity: 0.9;
+    margin-top: 3%;
     margin-left: 5%;
     width: 90%;
-    height: auto;
-    background-color: #2d2d2e;
+    background-color: #212122;
     border-radius: 20px;
     box-shadow: -2px 4px 20px black;
 }
 
-.tools a {
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-                 0px 8px 13px rgba(0,0,0,0.1),
-                 0px 18px 23px rgba(0,0,0,0.1);
-    margin-right: 40px;
-    font-size: 40px;
-    background: linear-gradient(to top, orange 0%, orange 4px, transparent 4px) no-repeat;
-    background-size: 0%;
-    transition: background-size 0.5s;
-    color: white;
-}
-
-.tools a:hover {
-    background-size: 100%;
-}
-
-.tools {
-    /* width: 750px; */
+p {
+    font-size: 50px;
     display: flex;
-    justify-content: flex-end;
-    position: relative;
-    top: -70px;
-}
-
-.title {
-    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
-    display: flex;
-    justify-content: flex-start;
-    left: 21px;
-    position: relative;
-}
-
-.title p img {
-    max-width: 40px;
-    border-radius: 13px;
-}
-
-.title p span {
-    border: solid white 3px;
-    border-left: 0px;
-    top: -5px;
-    position: relative;
-    margin: 8px;
-    font-size: 35px;
+    justify-content: center;
 }
